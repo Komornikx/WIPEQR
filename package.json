@@ -1,16 +1,16 @@
 {
 	"name": "wipeqrcode",
 	"version": "1.0.0",
-	"description": "lista graczy z qr",
+	"description": "QR Event app",
 	"main": "index.js",
 	"scripts": {
 		"dev": "cross-env DEV=true nuxi dev",
-		"build": "nuxt build",
-		"generate": "nuxt generate",
+		"build": "nuxi build",
+		"generate": "nuxi generate",
 		"backend": "cross-env nodemon ./backend/index.js",
 		"backend_dev": "cross-env DEV=true nodemon ./backend/index.js",
 		"prod": "cross-env nodemon ./backend/index.js",
-		"electron": "cross-env ELECTRON=true electron-forge start ./dupa.js ",
+		"electron": "cross-env ELECTRON=true electron-forge start",
 		"package": "electron-forge package",
 		"make": "cross-env ELECTRON=true electron-forge make"
 	},
