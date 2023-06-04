@@ -1,0 +1,11 @@
+node_modules
+.nuxt
+_nuxt
+
+backend/temp/*.csv
+backend/temp/*.zip
+out/
+.output
+dist
+
+.env

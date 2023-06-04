@@ -1,0 +1,58 @@
+{
+	"name": "wipeqrcode",
+	"version": "1.0.0",
+	"description": "lista graczy z qr",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cross-env DEV=true nuxi dev",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"backend": "cross-env nodemon ./backend/index.js",
+		"backend_dev": "cross-env DEV=true nodemon ./backend/index.js",
+		"prod": "cross-env nodemon ./backend/index.js",
+		"electron": "cross-env ELECTRON=true electron-forge start ./dupa.js ",
+		"package": "electron-forge package",
+		"make": "cross-env ELECTRON=true electron-forge make"
+	},
+	"keywords": [],
+	"author": "stah",
+	"license": "ISC",
+	"dependencies": {
+		"@pinia/nuxt": "^0.4.7",
+		"adm-zip": "^0.5.10",
+		"bcrypt": "^5.1.0",
+		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
+		"date-fns": "^2.29.3",
+		"dotenv": "^16.0.3",
+		"electron-serve": "^1.1.0",
+		"electron-squirrel-startup": "^1.0.0",
+		"express": "^4.18.2",
+		"jest": "^29.3.1",
+		"jsonwebtoken": "^9.0.0",
+		"lodash": "^4.17.21",
+		"mongoose": "^6.8.4",
+		"nuxt": "^3.2.3",
+		"pinia": "^2.0.33",
+		"qrcode": "^1.5.1",
+		"sass": "^1.58.3",
+		"vuetify": "^3.1.4"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.5",
+		"@electron-forge/maker-deb": "^6.0.5",
+		"@electron-forge/maker-rpm": "^6.0.5",
+		"@electron-forge/maker-squirrel": "^6.0.5",
+		"@electron-forge/maker-zip": "^6.0.5",
+		"@mdi/js": "^7.1.96",
+		"@nuxtjs/tailwindcss": "^6.4.1",
+		"@types/lodash": "^4.14.191",
+		"autoprefixer": "^10.4.13",
+		"electron": "^23.1.2",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.7"
+	},
+	"overrides": {
+		"vue": "latest"
+	}
+}
